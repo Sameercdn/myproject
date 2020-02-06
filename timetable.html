@@ -1,0 +1,149 @@
+﻿<html>
+<head>
+<title>KSRTC Time table, Bijapur</title>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div style="background-color:blue;color:white;">
+<img src="images/logo.png" width="100px" style="float:left"/>
+<h1 style="float:right;margin-left:-10px">ಕರ್ನಾಟಕಾ ರಸ್ತೆ ಸಾರಿಗೆ ಸಂಸ್ಥೆ, ವಿಜಯಪುರ ವಿಭಾಗ...</h1>
+</div>
+<div style="background-color:#5DADE2;margin-top:-23px;">
+<table border="1" width="100%">
+<tr>
+<th><a href="index.html">Home</a></th>
+<th><a href="timetable.html">Time Table</a></th>
+<th><a href="Gallery.html">Gallery</a></th>
+<th><a href="Map.html">Map</a></th>
+<th><a href="contact.html">contact</a></th>
+</tr>
+</table>
+</div>
+Time table
+<table border="1" width="100%">
+<tr>
+<th>Sl.
+No</th>
+<th>From</th>
+<th>To</th>
+<th>Via</th>
+<th>View Details</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Vijapur </td>
+<td>Chadachan</td>
+<td>Horti</td>
+<td>
+<button id="cdnshow" style="background-color:green">View</button></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Vijapur </td>
+<td>Solapur</td>
+<td>Zalki</td>
+<td>
+<button id="showvijasola" style="background-color:green">View</button></td>
+</tr>
+</table>
+<hr>
+Time Table
+<hr>
+<div id="vijtochad">
+Vijapur To Chadachan, Time Table
+ <table border="1px" width="20%">
+	<tr>
+		<th>Sl. No</th>
+		<th>Via</th>
+		<th>Time</th>
+	</tr>.
+	<tr>
+		<th>1</th>
+		<th>Horti</th>
+		<th>8.00</th>
+	</tr>
+	<tr>
+		<th>2</th>
+		<th>Horti</th>
+		<th>9.00</th>
+	</tr>
+	<tr>
+		<th>3</th>
+		<th>Horti</th>
+		<th>10.00</th>
+	</tr>
+	<tr>
+		<th>4</th>
+		<th>Horti</th>
+		<th>11.00</th>
+	</tr>
+	<tr>
+		<th>5</th>
+		<th>Horti</th>
+		<th>12.00</th>
+	</tr>
+	<tr>
+		<th>6</th>
+		<th>Horti</th>
+		<th>01.00</th>
+	</tr>
+ </table>
+ </div>
+ <div id="vijtosola">
+Vijapur To Solapur, Time Table
+ <table border="1px" width="20%">
+	<tr>
+		<th>Sl. No</th>
+		<th>Via</th>
+		<th>Time</th>
+	</tr>.
+	<tr>
+		<th>1</th>
+		<th>Zalki</th>
+		<th>8.00</th>
+	</tr>
+	<tr>
+		<th>2</th>
+		<th>Zalki</th>
+		<th>9.00</th>
+	</tr>
+	<tr>
+		<th>3</th>
+		<th>Zalki</th>
+		<th>10.00</th>
+	</tr>
+	<tr>
+		<th>4</th>
+		<th>Zalki</th>
+		<th>11.00</th>
+	</tr>
+	<tr>
+		<th>5</th>
+		<th>Zalki</th>
+		<th>12.00</th>
+	</tr>
+	<tr>
+		<th>6</th>
+		<th>Zalki</th>
+		<th>01.00</th>
+	</tr>
+ </table>
+ </div>
+<h6 style="text-left:center;background-color:blue;color:white">ಕರ್ನಾಟಕಾ ರಸ್ತೆ ಸಾರಿಗೆ ಸಂಸ್ಥೆ, ವಿಜಯಪುರ ವಿಭಾಗ. Design By : Sameer Nadaf</h6>
+<script>
+$(document).ready(function(){
+$('#vijtochad').hide();
+$('#vijtosola').hide();
+  $("#cdnshow").click(function(){
+    $("#vijtochad").show();
+$("#vijtosola").hide();
+  });
+  $("#showvijasola").click(function(){
+  $('#vijtochad').hide();
+    $("#vijtosola").show();
+  });
+});
+</script>
+</body>
+</html>
